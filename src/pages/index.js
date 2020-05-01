@@ -4,6 +4,10 @@ import * as Mixins from '../Mixins';
 import * as t from '../Typography';
 import Layout, { Content } from '../components/Layout';
 import Placeholder from '../images/placeholder.png';
+import Terra from '../images/terra.png'
+import Beatpal from '../images/Beatpal.png'
+import Hype from '../images/Hype.png'
+import Resolution from '../images/resolution.png';
 import { HireMe, LinkButton } from '../components/Button.js';
 import HireMePopup from '../components/HireMePopup.js';
 import { media } from '../MediaQueries';
@@ -152,15 +156,16 @@ class Homepage extends React.Component {
             Fullstack Engineer and Musician
             </t.LargeP>
             <HireMe large onClick={this.openContactPopup} book>
-              Hire me
+              Contact Me
             </HireMe>
           </AboveFold>
           <Content>
             <t.H2 primary align="center" bold>
-              Lorem ipsum
+              Who am I?
             </t.H2>
             <t.P align="center" max70 className="who-desc">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            A recent graduate of Fullstack Academy, and armed with a liberal arts degree in Music Composition, I am a dedicated philomath
+            who loves to find novel solutions to important problems. I think both programming and music are my tools to create and contribute to society something new and exciting.
             </t.P>
             <t.H2 primary align="center" bold className="portfolio">
               Portfolio
@@ -169,16 +174,24 @@ class Homepage extends React.Component {
           <Block>
             <BlockContent>
               <DivWrapper>
-                <ItemImage src={Placeholder} alt="Placeholder title" />
+                <ItemImage src={Terra} alt="Placeholder title" />
               </DivWrapper>
               <DivWrapper>
-                <t.H2 bold>Placeholder website</t.H2>
-                <t.P>Lorem ipsum</t.P>
-                <t.P>Dolor sit amet</t.P>
+                <t.H2 bold>Terra 2042</t.H2>
+                <t.P>In-Browser Multiplayer Tabletop Card Game</t.P>
+                  <t.P bold>(React, Node, MongoDB, Socket.io, Express)</t.P>
+                <t.P>Set in post apocalyptic future, this game is based loosely on Blizzard's Hearthstone, but runs completely in the browser, with fullstack javascript. Play with a friend, earn gold, and buy new cards!</t.P>
                 <LinkButton primary bold className="link" as="a"
                   target="_blank"
-                  href="#">
-                  Lorem ipsum
+                  href="http://terra-2042.herokuapp.com/">
+                  Play
+                </LinkButton>
+                <br/>
+                <br/>
+                <LinkButton primary bold className="link" as="a"
+                  target="_blank"
+                  href="https://github.com/MADE-Game/TERRA2042/blob/master/README.md">
+                  Github
                 </LinkButton>
               </DivWrapper>
             </BlockContent>
@@ -186,33 +199,40 @@ class Homepage extends React.Component {
           <Block>
             <BlockContent>
               <DivWrapper>
-                <t.H2 bold>Placeholder website</t.H2>
-                <t.P>Lorem ipsum</t.P>
-                <t.P>Dolor sit amet</t.P>
+                <t.H2 bold>Beat Pal</t.H2>
+                <t.P>Small Beat Pad Web App</t.P>
+                <t.P>Developed over a weekend for Fullstack Academy's Stack-a-thon, Beat Pal was a project that connected my two passions, engineering and music. I utilized the Tone.js API to create robust functionality and created the UI myself in a deep dive of flexbox and CSS/HTML.</t.P>
                 <LinkButton primary bold className="link" as="a"
                   target="_blank"
-                  href="#">
-                  Lorem ipsum
+                  href="http://beatpal.herokuapp.com/">
+                  Try it out
+                </LinkButton>
+                <br/>
+                <br/>
+                <LinkButton primary bold className="link" as="a"
+                  target="_blank"
+                  href="https://github.com/cmax1018/beatpal">
+                  Github
                 </LinkButton>
               </DivWrapper>
               <DivWrapper>
-                <ItemImage src={Placeholder} alt="Placeholder title" />
+                <ItemImage src={Beatpal} alt="Beatpal" />
               </DivWrapper>
             </BlockContent>
           </Block>
           <Block>
             <BlockContent>
               <DivWrapper>
-                <ItemImage src={Placeholder} alt="Placeholder title" />
+                <ItemImage src={Hype} alt="Placeholder title" />
               </DivWrapper>
               <DivWrapper>
-                <t.H2 bold>Placeholder website</t.H2>
-                <t.P>Lorem ipsum</t.P>
-                <t.P>Dolor sit amet</t.P>
+                <t.H2 bold>Hype Sneaks</t.H2>
+                <t.P>Mock E-Comm Website</t.P>
+                <t.P>A small project with a small team, Hype Sneaks was a case study in 1) creating a functioning e-comm website, from inventory management, to session storage and cart functionality, all the way to payment processing and 2) working within a development team. We managed different parts of the application, and split up tasks such as Git flow, Devops work, schema design amongst us all to get a solid understanding of a team environment.</t.P>
                 <LinkButton primary bold className="link" as="a"
                   target="_blank"
-                  href="#">
-                  Lorem ipsum
+                  href="https://github.com/grace-shopper-sneakers/sneaks">
+                  Github
                 </LinkButton>
               </DivWrapper>
             </BlockContent>
@@ -220,24 +240,24 @@ class Homepage extends React.Component {
           <Block>
             <BlockContent>
               <DivWrapper>
-                <t.H2 bold>Placeholder website</t.H2>
-                <t.P>Lorem ipsum</t.P>
-                <t.P>Dolor sit amet</t.P>
+                <t.H2 bold>Resolution</t.H2>
+                <t.P>My latest EP</t.P>
+                <t.P>Here for my music? You can find my latest work below.</t.P>
                 <LinkButton primary bold className="link" as="a"
                   target="_blank"
-                  href="#">
-                  Lorem ipsum
+                  href="https://distrokid.com/hyperfollow/maxvanbuskirk/resolution">
+                  Resolution - EP
                 </LinkButton>
               </DivWrapper>
               <DivWrapper>
-                <ItemImage src={Placeholder} alt="Placeholder title" />
+                <ItemImage src={Resolution} alt="Placeholder title" />
               </DivWrapper>
             </BlockContent>
           </Block>
           <WorkWithMe>
-            <t.H1 green>Get in touch with me</t.H1>
+            <t.H1 green>Want to work together?</t.H1>
             <t.LargeP>
-              Fancy working with me? Contact me for more info!{' '}
+              Get in touch!
             </t.LargeP>
             <HireMe onClick={this.openContactPopup} book>
               Contact me

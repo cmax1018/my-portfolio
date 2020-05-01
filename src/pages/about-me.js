@@ -84,10 +84,10 @@ class AboutMe extends React.Component {
         <Layout theme="white" openContactPopup={this.openContactPopup}>
           <AboveFold>
             <t.H1 green align="center">
-              Max Van Buskirk - Lorem ipsum
+              Max Van Buskirk - Fullstack Engineer
             </t.H1>
             <t.LargeP align="center" max70>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Hello! I graduated in 2018 with a degree in Music Composition, then moved to NYC, where I was a technical recruiter for 80+ NYC startups, and placed 10+ engineers ranging from Engineering Managers to senior-level IC roles at 11 different companies. After making some strong industry connections, I realized my passion for creation and architecture pointed me away from recruiting and towards programming. I had taken some CS courses in the past, and was hoping to whet my skills in web development as well. I graduated in April '20 armed with in-depth knowledge of javascript, React, Node, and just solid engineering practices across the board. I am now engaged in a plethora of freelance work, ranging from a family-owned business looking to create work-hour tracking, to non-profits trying to establish a web presence. If you'd like to work with me, please reach out!
             </t.LargeP>
           </AboveFold>
           <Content>

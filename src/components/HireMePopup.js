@@ -4,9 +4,14 @@ import { lighten, darken } from 'polished';
 import * as t from '../Typography';
 import Colors from '../Colors';
 import LN from '../images/ln.png';
+import GH from '../images/gh.png';
 import Close from '../images/close-popup-grey.png';
 import { media } from '../MediaQueries';
 import Helmet from 'react-helmet';
+
+const style = {
+  maxHeight: '100px'
+}
 
 const HireMePopupWrapper = styled.div`
   position: fixed;
@@ -89,12 +94,18 @@ class HireMePopup extends React.Component {
           <Burger onClick={this.closePopup}>
             <img alt="Close popup" src={Close} />
           </Burger>
-          <t.H3>Contact me on</t.H3>
+          <t.H3>Contact me at</t.H3>
           <Link primary bold
             target="_blank"
-            href="https://www.linkedin.com/">
+            href="https://www.linkedin.com/in/maxvanbuskirk">
             <img src={LN} alt="Your Linkedin profile" />
           </Link>
+          <Link primary bold
+            target="_blank"
+            href="https://www.github.com/cmax1018">
+            <img src={GH} alt="Your GitHub profile" style={style} />
+          </Link>
+
         </ContentWrapper>
       </HireMePopupWrapper>
     );
