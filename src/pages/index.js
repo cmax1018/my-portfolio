@@ -5,7 +5,7 @@ import * as t from '../Typography';
 import Layout, { Content } from '../components/Layout';
 import Terra from '../images/terra.png'
 import Beatpal from '../images/beatpal.png'
-import Hype from '../images/Hype.png'
+import Hype from '../images/hype.png'
 import Resolution from '../images/resolution.png';
 import { HireMe, LinkButton } from '../components/Button.js';
 import HireMePopup from '../components/HireMePopup.js';
