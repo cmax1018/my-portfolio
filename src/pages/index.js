@@ -4,7 +4,7 @@ import * as Mixins from '../Mixins';
 import * as t from '../Typography';
 import Layout, { Content } from '../components/Layout';
 import Terra from '../images/terra.png'
-import Beatpal from '../images/Beatpal.png'
+import Beatpal from '../images/beatpal.png'
 import Hype from '../images/Hype.png'
 import Resolution from '../images/resolution.png';
 import { HireMe, LinkButton } from '../components/Button.js';
