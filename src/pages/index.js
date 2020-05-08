@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import * as Mixins from '../Mixins';
 import * as t from '../Typography';
 import Layout, { Content } from '../components/Layout';
-import Placeholder from '../images/placeholder.png';
 import Terra from '../images/terra.png'
 import Beatpal from '../images/Beatpal.png'
 import Hype from '../images/Hype.png'
