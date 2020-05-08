@@ -83,16 +83,18 @@ class AboutMe extends React.Component {
       <AboutMeWrapper>
         <Layout theme="white" openContactPopup={this.openContactPopup}>
           <AboveFold>
+          <Content>
+              <Img fluid={data.avatarAbout.childImageSharp.fluid} alt="Max Van Buskirk" className="avatar" />
+            </Content>
             <t.H1 green align="center">
               Max Van Buskirk - Fullstack Engineer
             </t.H1>
             <t.LargeP align="center" max70>
-            Hello! I graduated in 2018 with a degree in Music Composition, then moved to NYC, where I was a technical recruiter for 80+ NYC startups, and placed 10+ engineers ranging from Engineering Managers to senior-level IC roles at 11 different companies. After making some strong industry connections, I realized my passion for creation and architecture pointed me away from recruiting and towards programming. I had taken some CS courses in the past, and was hoping to whet my skills in web development as well. I graduated in April '20 armed with in-depth knowledge of javascript, React, Node, and just solid engineering practices across the board. I am now engaged in a plethora of freelance work, ranging from a family-owned business looking to create work-hour tracking, to non-profits trying to establish a web presence. If you'd like to work with me, please reach out!
+              Hello! I'm Max, a software engineer with a penchant for music composition, AI, and game development. I am now engaged in a plethora of freelance work, ranging from a family-owned business looking to create work-hour tracking, to non-profits trying to establish a web presence. <br />If you'd like to work with me, please reach out!
+             <br /><br />
+            After making some strong industry connections as a 3rd-party technical recruiter in NYC, I realized my passion for creation and architecture pointed me away from recruiting and towards programming. I had taken some CS courses in the past, and was hoping to whet my skills in web development as well. I graduated in April '20 from Fullstack Academy's Web Development curriculum armed with in-depth knowledge of javascript, React, Node, and just solid engineering practices across the board.
             </t.LargeP>
           </AboveFold>
-          <Content>
-            <Img fluid={data.avatarAbout.childImageSharp.fluid} alt="Max Van Buskirk" className="avatar" />
-          </Content>
         </Layout>
         <HireMePopup open={openHireMePopup} handleClose={this.handleRequestDemoClose} />
       </AboutMeWrapper>
@@ -104,7 +106,7 @@ export default AboutMe;
 
 export const pageQuery = graphql`
   query {
-    avatarAbout: file(relativePath: { eq: "avatar.jpg" }) {
+    avatarAbout: file(relativePath: { eq: "profile.jpg" }) {
       ...fluidImage
     }
   }
