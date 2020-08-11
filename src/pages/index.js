@@ -4,8 +4,9 @@ import * as Mixins from '../Mixins';
 import * as t from '../Typography';
 import Layout, { Content } from '../components/Layout';
 import Terra from '../images/terra.png'
+import Romance from '../images/romance.png'
 import Beatpal from '../images/beatpal.png'
-import Hype from '../images/hype.png'
+import Sanitation from '../images/sanitation.png'
 import Resolution from '../images/resolution.png';
 import { HireMe, LinkButton } from '../components/Button.js';
 import HireMePopup from '../components/HireMePopup.js';
@@ -173,6 +174,29 @@ class Homepage extends React.Component {
           <Block>
             <BlockContent>
               <DivWrapper>
+                <ItemImage src={Romance} alt="Romancing.ai" />
+              </DivWrapper>
+              <DivWrapper>
+                <t.H2 bold>Romancing.AI</t.H2>
+                <t.P>Heart Rate Monitor and Video Carousel</t.P>
+                  <t.P bold>(React, Flask, Python, Socket.io)</t.P>
+                <t.P>Romancing.AI is one flank of Breathing.AI that aims to look into human stress
+                  levels when shown visual motion stimuli. The PWA reads your heart rate from a webcam feed
+                  while showing a carousel of videos, all with personalized results at the end.
+                </t.P>
+                <LinkButton primary bold className="link" as="a"
+                  target="_blank"
+                  href="http://romancing-ai.herokuapp.com/">
+                  See here!
+                </LinkButton>
+                <br/>
+                <br/>
+              </DivWrapper>
+            </BlockContent>
+          </Block>
+          <Block>
+            <BlockContent>
+              <DivWrapper>
                 <ItemImage src={Terra} alt="Placeholder title" />
               </DivWrapper>
               <DivWrapper>
@@ -222,15 +246,25 @@ class Homepage extends React.Component {
           <Block>
             <BlockContent>
               <DivWrapper>
-                <ItemImage src={Hype} alt="Placeholder title" />
+                <ItemImage src={Sanitation} alt="Placeholder title" />
               </DivWrapper>
               <DivWrapper>
-                <t.H2 bold>Hype Sneaks</t.H2>
-                <t.P>Mock E-Comm Website</t.P>
-                <t.P>A small project with a small team, Hype Sneaks was a case study in 1) creating a functioning e-comm website, from inventory management, to session storage and cart functionality, all the way to payment processing and 2) working within a development team. We managed different parts of the application, and split up tasks such as Git flow, Devops work, schema design amongst us all to get a solid understanding of a team environment.</t.P>
+                <t.H2 bold>Department of Sanitation</t.H2>
+                <t.P>Mock Waste Analytics Dashboard Website</t.P>
+                <t.P bold>(React, Express, PostgreSQL, OAuth, Node, Chart.js)</t.P>
+                <t.P>Fullstack application that authenticates user sign ups and provides real
+                  time data analtyics in the form of charts, tables and graphs to display
+                  trash pickups, waste bin count, and includes a settings panel for preference selection.</t.P>
                 <LinkButton primary bold className="link" as="a"
                   target="_blank"
-                  href="https://github.com/grace-shopper-sneakers/sneaks">
+                  href="https://sanitationdepartment.herokuapp.com">
+                  Check it out!
+                </LinkButton>
+                <br ></br>
+                <br ></br>
+                <LinkButton primary bold className="link" as="a"
+                  target="_blank"
+                  href="https://github.com/cmax1018/Sanitation-dept">
                   Github
                 </LinkButton>
               </DivWrapper>
@@ -246,6 +280,13 @@ class Homepage extends React.Component {
                   target="_blank"
                   href="https://distrokid.com/hyperfollow/maxvanbuskirk/resolution">
                   Resolution - EP
+                </LinkButton>
+                <br />
+                <br />
+                <LinkButton primary bold className="link" as="a"
+                  target="_blank"
+                  href="http://youtube.com/user/TheMaxMontage">
+                  Youtube
                 </LinkButton>
               </DivWrapper>
               <DivWrapper>
