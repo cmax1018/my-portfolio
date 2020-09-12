@@ -5,6 +5,7 @@ import * as t from '../Typography';
 import Layout, { Content } from '../components/Layout';
 import Terra from '../images/terra.png'
 import Romance from '../images/romance.gif'
+import CNN from '../images/CNN.png'
 import Beatpal from '../images/beatpal.png'
 import Sanitation from '../images/sanitation.png'
 import Resolution from '../images/resolution.png';
@@ -191,6 +192,22 @@ class Homepage extends React.Component {
                 </LinkButton>
                 <br/>
                 <br/>
+              </DivWrapper>
+            </BlockContent>
+          </Block>
+          <Block>
+            <BlockContent>
+              <DivWrapper>
+                <ItemImage src={CNN} alt="Neural Net" />
+              </DivWrapper>
+              <DivWrapper>
+                <t.H2 bold>Genre-rator</t.H2>
+                <t.P>Deep learning Convolutional Neural Net</t.P>
+                  <t.P bold>(Python, NumPy, Tensorflow, Keras)</t.P>
+                <t.P>Genre-rator uses the latest methods in audio anaylsis and machine learning techniques to
+                  classify audio samples into 1 of 10 genres. It was pre-trained on 20000 samples of audio, and was
+                  inspired by my wishes to more objectively categorize my own music. Current model operates with ~89% success rate against training test set.
+                </t.P>
               </DivWrapper>
             </BlockContent>
           </Block>
