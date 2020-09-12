@@ -169,7 +169,7 @@ class Homepage extends React.Component {
             who loves to find novel solutions to important problems. I think both programming and music are my tools to create and contribute to society something new and exciting.
             </t.P>
             <t.H2 primary align="center" bold className="portfolio">
-              Portfolio
+              Notable Projects
             </t.H2>
           </Content>
           <Block>
