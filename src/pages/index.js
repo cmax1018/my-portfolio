@@ -4,7 +4,7 @@ import * as Mixins from '../Mixins';
 import * as t from '../Typography';
 import Layout, { Content } from '../components/Layout';
 import Terra from '../images/terra.png'
-import Romance from '../images/romance.png'
+import Romance from '../images/romance.gif'
 import Beatpal from '../images/beatpal.png'
 import Sanitation from '../images/sanitation.png'
 import Resolution from '../images/resolution.png';
@@ -174,7 +174,7 @@ class Homepage extends React.Component {
           <Block>
             <BlockContent>
               <DivWrapper>
-                <ItemImage src={Romance} alt="Romancing.ai" />
+                <ItemImage src={Romance} alt="Romancing.ai" style={{objectFit:'stretch'}}/>
               </DivWrapper>
               <DivWrapper>
                 <t.H2 bold>Romancing.AI</t.H2>
@@ -186,7 +186,7 @@ class Homepage extends React.Component {
                 </t.P>
                 <LinkButton primary bold className="link" as="a"
                   target="_blank"
-                  href="http://romancing-ai.herokuapp.com/">
+                  href="https://www.romancing.ai">
                   See here!
                 </LinkButton>
                 <br/>
