@@ -197,10 +197,7 @@ class Homepage extends React.Component {
           </Block>
           <Block>
             <BlockContent>
-              <DivWrapper>
-                <ItemImage src={CNN} alt="Neural Net" />
-              </DivWrapper>
-              <DivWrapper>
+            <DivWrapper>
                 <t.H2 bold>Genre-rator</t.H2>
                 <t.P>Deep learning Convolutional Neural Net</t.P>
                   <t.P bold>(Python, NumPy, Tensorflow, Keras)</t.P>
@@ -208,6 +205,9 @@ class Homepage extends React.Component {
                   classify audio samples into 1 of 10 genres. It was pre-trained on 20000 samples of audio, and was
                   inspired by my wishes to more objectively categorize my own music. Current model operates with ~89% success rate against training test set.
                 </t.P>
+              </DivWrapper>
+              <DivWrapper>
+                <ItemImage src={CNN} alt="Neural Net" />
               </DivWrapper>
             </BlockContent>
           </Block>
